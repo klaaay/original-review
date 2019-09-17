@@ -1,0 +1,39 @@
+.button {
+  background-color: #c47135;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    transition: all 0.25s;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+  }
+  &::before {
+    border-top: 2px solid #c47135;
+    left: 0px;
+    top: -10px;
+  }
+  &::after {
+    border-bottom: 2px solid #c47135;
+    bottom: -10px;
+    right: 0px;
+  }
+
+  &:hover {
+    &::before {
+      // height: 100%;
+      width: 100%;
+    }
+    &::after {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
