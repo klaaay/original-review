@@ -1,0 +1,15 @@
+.trigger {
+  cursor: pointer;
+
+  .el {
+    transition: max-height 0.5s;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  &:hover {
+    & > .el {
+      max-height: var(--max-height);
+    }
+  }
+}
