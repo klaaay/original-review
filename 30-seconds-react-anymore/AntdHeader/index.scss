@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  .left-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .right-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
